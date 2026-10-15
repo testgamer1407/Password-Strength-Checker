@@ -20,7 +20,7 @@ if password:
     c_upper = bool(re.search(r"[A-Z]", password))
     c_lower = bool(re.search(r"[a-z]", password))
     c_digit = bool(re.search(r"\d", password))
-    c_special = bool(re.search(r"[!@#$%^&*(),.?\":{}|<>]", password)
+    c_special = bool(re.search(r"[!@#$%^&*(),.?\":{}|<>]", password))
     criteria_list = [
         ("Minimum length (8+ characters)", c_length, "Make your password at least 8 characters long."),
         ("At least one uppercase letter (A-Z)", c_upper, "Include at least one uppercase letter (e.g., A, B, C)."),
